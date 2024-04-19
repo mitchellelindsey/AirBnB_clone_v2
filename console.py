@@ -172,7 +172,6 @@ class HBNBCommand(cmd.Cmd):
         objects = storage.all()
 
         commands = shlex.split(arg)
-
         if len(commands) == 0:
             for key, value in objects.items():
                 print(str(value))
